@@ -9,8 +9,8 @@
 		<meta name="keywords"  content="ux,user experience,heartbreak" />
 		<meta name="Resource-type" content="Document" />
 	
-		<link rel="stylesheet" type="text/css" href="../_style/index.css">
-    	<link rel="icon" href="../_imgs/ico/ux3.ico">
+		<link rel="stylesheet" type="text/css" href="_style/index.css">
+    	<link rel="icon" href="_imgs/ico/ux3.ico">
     	
     	<script type="text/javascript">
   		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -21,7 +21,7 @@
   		ga('send', 'pageview');
 		</script>
 		
-		<script type="text/javascript">
+			<script type="text/javascript">
 			function showResult(str) {
   				if (str.length==0) { 
     			document.getElementById("livesearch").innerHTML="";
@@ -44,49 +44,63 @@
       					document.getElementById("livesearch").style.border="1px solid #A5ACB2";
     				}
   				}
-  				xmlhttp.open("GET","../_livesearch/livesearch.php?q="+str,true);
+  				xmlhttp.open("GET","livesearch.php?q="+str,true);
   				xmlhttp.send();
 				}
 		</script>
+
 	</head>
 
 	<body>
-		<header>	
-			<nav>
-				<ul>
-					<li><a href="#">+ User Experience of a Heartbreak</a></li>
-				
-					<li><label for="menu-toggle"><img id="icons" src="../_imgs/index/grid.png" style="width:1em;"></label></li>
-						<input type="checkbox" id="menu-toggle"/>
-							<ul id="menu">
-  								<li><a href="facebook"><img id="pages" src="../_imgs/index/nav/fb.png"></a></li>
- 								<li><a href="google"><img id="pages" src="../_imgs/index/nav/google.png"></a></li>
-  								<li><a href="instagram"><img id="pages" src="../_imgs/index/nav/ig.png"></a></li>
-  								<li><a href="ios"><img id="pages" src="../_imgs/index/nav/ios.png"></a></li>
- 								<li><a href="linkedin"><img id="pages" src="../_imgs/index/nav/li.png"></a></li>
-  								<li><a href="twitter"><img id="pages" src="../_imgs/index/nav/tw.png"></a></li>						
-							</ul>	
-						
-					<li><a href="#"><img id="icons" src="../_imgs/index/bell.png"></a></li>
-					
-					<li><a href="#"><img id="icons" src="../_imgs/index/share.png" style="width:4.5em;"></a></li>
-					<li><a href="#"><img id="icons" src="../_imgs/index/ux3.png" style="width:3em;"></a></li>
-				</ul>
-			</nav>
-		</header>
+		<nav>
+			<ul>
+				<li><a href="#">+ User Experience of a Heartbreak</a></li>
+			
+				<li><label for="menu-toggle"><img src="_imgs/index/grid.png"></label></li>
+					<input type="checkbox" id="menu-toggle"/>
+						<ul id="menu">
+							<li><a href="facebook">
+							<figure><img src="_imgs/index/nav/fb.png"><figcaption>Facebook</figcaption></figure>
+							</a></li>
 
-		<div class ="wrapper">
-			<figure><img id="logo" src="_imgs/index/google.png"></figure>
+							<li><a href="google">
+							<figure><img src="_imgs/index/nav/google.png"><figcaption>Google</figcaption></figure>
+							</a></li>
+
+							<li><a href="instagram">
+							<figure><img src="_imgs/index/nav/ig.png"><figcaption>Instagram</figcaption></figure>
+							</a></li>
+
+							<li><a href="ios">
+							<figure><img src="_imgs/index/nav/ios.png"><figcaption>iOS</figcaption></figure>
+							</a></li>
+
+							<li><a href="linkedin">
+							<figure><img src="_imgs/index/nav/li.png"><figcaption>LinkedIn</figcaption></figure>
+							</a></li>
+
+							<li><a href="twitter">
+							<figure><img src="_imgs/index/nav/tw.png"><figcaption>Twitter</figcaption></figure>
+							</a></li>
+						</ul>	
+					
+				<li><a href="#"><img src="_imgs/index/bell.png"></a></li>
+				<li><a href="#"><img src="_imgs/index/share.png"></a></li>
+				<li><a href="#"><img src="_imgs/index/ux3.png"></a></li>
+			</ul>
+		</nav>
+		<div class="clearfix"></div>
+		<section>
+			<img src="_imgs/index/google.png">
 			<form>
 				<input type="text" size="100" onkeyup="showResult(this.value)">
 				<div id="livesearch"></div>
 			</form>
-		</div>
+		</section>
 		
 		<footer>
 			<a href="about"><p>About</p></a>
 			<a href="thanku"><p>Thank u</p></a>
-		
 		</footer>
 	</body>
 </html>

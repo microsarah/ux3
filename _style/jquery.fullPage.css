@@ -228,15 +228,9 @@ nav li a{
 /* -------------------------------------- PAGES */
 
 
-
-.wrapper{
-    margin:0 auto;
-    width:80%;
-}
-
 figure{
     margin:0 auto;
-    width:24em;
+    width:33.33%;
     min-width:375px;
 }
 
@@ -266,39 +260,3 @@ img{
     text-align:center;
 }
 
-/* -------------------------------------- ABT + THANK U */
-
-
-article{
-	margin:0 auto;
-	width:60%;
-	display:block;
-}
-
-h1{
-	font-size:1.25em;
-	font-weight:100;
-	text-align: left;
-	color:#ffffff;
-	min-width: 375px;
-	max-width:660px;
-}
-
-h1 a{
-	text-decoration:none;
-	font-weight:100;
-	color:#ffffff;
-}
-
-
-#red1{
-	color:#ed2ea8;
-}
-
-#red2{
-	color:#ea189f;
-}
-
-#red3{
-	color:#eb008b;
-}

@@ -1,0 +1,63 @@
+<DOCTYPE! html>
+
+<head>
+	<title>Marissa's Portfolio</title>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat+Alternates' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="assets/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/portfolio.css">
+</head>
+
+<body>
+
+	<header>
+
+		<a href="portfolio_marissa.html"><img src="assets/logo_g-01.png" id="logo"/></a>
+
+		<nav>
+			<ul><li><a href="me.html">me</a></li>
+				<li><a href="http://words-wont-suffice.tumblr.com" target="_blank">blog</a></li>
+				<li><a href="#">contact</a></li>
+			</ul>
+			</nav>
+			<div class="nav_sm">
+				<label for="menu-toggle"><img src="assets/hamburga.png">
+				</label>
+				<input type="checkbox" id="menu-toggle"/>
+				<ul id="menu">
+					<li><a href="me.html">me</a></li>
+					<li><a href="http://words-wont-suffice.tumblr.com" target="_blank">blog</a></li>
+					<li><a href="#">contact</a></li>
+				</ul>
+			</div>
+
+
+	</header>
+
+
+		
+		<div class="circular" id="c1" style="cursor: pointer;" onclick="window.location='harbor_center.html'";> </div>
+
+		<a href="#">
+		<div class= "circular" id="c2"></div>
+		</a>
+
+		<div class= "circular" id="c3" style="cursor: pointer;" onclick="window.location='info_g.html'";></div>
+
+		<div class= "circular" id="c4" style="cursor: pointer;" onclick="window.location='http://google.com'";></div>
+
+		<div class= "circular" id="c5" style="cursor: pointer;" onclick="window.location='http://google.com'";></div>
+
+		<div class= "circular" id="c6"style="cursor: pointer;" onclick="window.location='http://google.com'";></div>
+
+		<div class= "circular" id="c7" style="cursor: pointer;" onclick="window.location='http://google.com'";></div>
+
+		<div class="circular" id="c8" style="cursor: pointer;" onclick="window.location='http://google.com'";></div>
+
+		<div class="circular" id="c9" style="cursor: pointer;" onclick="window.location='http://google.com'";></div>
+
+
+</body>
+
+</html>
