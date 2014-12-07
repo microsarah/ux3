@@ -1,0 +1,6 @@
+ErrorDocument 404 /404.html
+Options +FollowSymlinks -Multiviews
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^Customer-cat(.+)/(.+)$ /Customer-cat.php?Mcat_id=$1&customCat=$2 [L]

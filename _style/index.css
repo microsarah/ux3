@@ -1,0 +1,238 @@
+*{
+	font-family: 'Arial', 'sans-serif';
+    background: #ffffff;
+    margin: auto;
+}
+
+/* -------------------------------------- NAV */
+
+header {
+	margin:0 auto;
+    width:100%;  
+}
+
+nav{
+	top:0;
+	right:0;
+	position:fixed;
+	padding:1em;
+	width:auto;
+	z-index:999;
+}
+
+
+/* list items in nav */
+nav ul li{
+	list-style:none;
+	display:inline;
+	text-decoration:none;
+	padding:0.5em;
+	
+}
+
+/* linked list items in nav */
+nav li a{
+	text-decoration:none;
+	font-size:.8em;
+	line-height:1.4em;
+	color:#404040;
+	cursor:default;
+}
+
+/* nav icons */
+#icons{
+	width:1.5em;
+	vertical-align: middle;
+}
+
+#logo{
+	padding:1em 0.5em;
+	width:1.5em;
+	cursor:pointer;
+	min-width:40px;
+}
+
+/* -------------------------------------- DROPDOWN TOGGLE */
+
+label {
+  cursor:pointer;
+}
+
+#menu-toggle {
+  display: none; /* hide the checkbox */
+}
+
+#menu {
+  display: none;
+}
+
+/* the box itself */
+#menu-toggle:checked + #menu {
+  display: block;
+  position:fixed;
+  right:1.25em;
+  margin-top:0.8em;
+  border:0.1em solid #cbcbcb;
+  border-radius:0.1em;
+  padding:0.5em;
+  width:18em;
+}
+
+
+/* the page icons*/
+#pages {
+	display:inline;
+	margin:0.5em auto;
+	border:0.1em solid #ffffff;
+	border-radius: 0.2em;
+	padding:0.75em;
+	width:4em;
+}
+
+#pages:hover{
+	display:inline;
+	margin:0.5em auto;
+	border:0.1em solid #e4e4e4;
+	border-radius: 0.2em;
+	padding:0.75em;
+	width:4em;
+	cursor:pointer;
+}
+
+
+
+/* -------------------------------------- FOOTER */
+footer{
+	bottom:0;
+	position:fixed;
+	width:100%;
+	height:1em;
+	border:0.1em solid #e4e4e4;
+	background-color:#f2f2f2;
+	padding:0.85em;
+}
+
+footer p {
+	margin:0 auto;
+	padding:0em 0.75em;
+	float:left;
+	font-size:0.8em;
+	color:#666666;
+	background-color:#f2f2f2;
+	width:auto;
+}
+
+footer p:hover{
+	color:#000000;
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+
+
+/* ------------------- BODY ------------------- */
+
+.wrapper{
+    margin:12em auto;
+    width:80%;
+}
+
+figure{
+    margin:0 auto;
+    width:16em;
+}
+
+
+#logo {
+    width:100%;
+}
+
+/*
+#buttons{
+	display:block;
+	float:left;
+	padding:2em;
+	width:10%;
+}
+*/
+
+
+
+/* ------------------- QUERY ------------------- */
+
+
+/* form style */
+input{
+	margin-top: 1.25em;
+	padding: 0.25em;
+	border: 0.1em solid #d8d8d8;
+	display: block;
+	width:35em;
+	outline:none;
+	font-size: 1em;
+}
+
+/* form hover */
+input[type="text"]:hover{
+    border: 0.1em solid #b2b2b2;
+    outline:none;
+}
+
+/* form click */
+input[type="text"]:active{
+    border: 0.1em solid #00a8e1;
+    outline:none;
+}
+
+/* form clicked */
+input[type="text"]:focus{
+    border: 0.1em solid #00a8e1;
+    outline:none;
+}
+
+/* query results */
+#livesearch{
+	padding:0.75em;
+	display:block;
+	width:34.5em;
+	background:
+	font-size:1.75;
+	font-weight:bold;
+	font-style:none;
+	line-height:0.8em;
+	cursor:default;
+}
+
+/* unvisited link */
+#livesearch a:link {
+    color: #000000;
+    font-style: none;
+    text-decoration: none;
+    display:block;
+    cursor:default;
+}
+
+/* visited link */
+#livesearch a:visited {
+    color: #52188c;
+    text-decoration: none;
+    display:block;
+    cursor:default;
+}
+
+/* mouse over link */
+#livesearch a:hover {
+    color: #00a8e1;
+    text-decoration: none;
+    display:block;
+    height: 100%;
+    cursor:default;
+}
+
+/* selected link */
+#livesearch a:active {
+    color: #000000;
+    text-decoration: none;
+    display:block;
+    cursor:default;
+}
