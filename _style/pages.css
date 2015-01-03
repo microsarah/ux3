@@ -1,0 +1,187 @@
+body{
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-weight: 100;
+	font-size:16px;
+}
+
+/* -------------------------------- animations */
+
+section{
+	height:100vh;
+	width:100%;
+	overflow:hidden;
+}
+
+section figure{
+	margin:7em auto;
+	height:50vh;
+	width:33.33%;
+}
+
+section figure img{
+	width:100%;
+	min-width:300px;
+}
+
+/* -------------------------------- about + thanku */
+
+article{
+	margin:12em auto;
+	width:51%;
+}
+
+h1{
+	padding:1em 0.75em 0em;
+	line-height:1.05em;
+	font-size:2em;
+	font-weight:500;
+	text-align:left;
+	color:#333333;
+}
+
+p{
+	padding:1em;
+	line-height:1.05em;
+	font-size:1.618em;
+	text-align:left;
+	color:#333333;
+}
+
+span{
+	line-height:1.3em;
+	color:#ea189f;
+}
+
+a{
+	text-decoration:none;
+}
+
+a:visited{
+	color:inherit;
+}
+
+/* -------------------------------- temp image fix */
+
+#lg{
+	margin:0 auto;
+    width:100%;
+}
+
+#med{
+	margin:0 auto;
+	width:80%;
+}
+
+#sm{
+	margin:0 auto;
+	width:60%;
+}
+
+/* -------------------------------- nav with logo only */
+
+#nav_sm{
+	margin:1em;
+	position:fixed;
+	right:0;
+}
+
+/* -------------------------------- about + thanku */
+
+#info{
+	background:#c6cae3;
+}
+
+/* -------------------------------- facebook */
+
+#fb0{
+	background:#cfe6d4;
+}
+
+#fb1{
+	background:#e8f7b0;
+}
+
+#fb2{
+	background:#b7cbff;
+}
+
+#fb3{
+	background:#c49ace;
+}
+
+#fb4{
+	background:#bed9da;
+}
+
+/* -------------------------------- google */
+#g0{
+	background:#c6cae3;
+}
+
+#g1{
+	background:#ddf0e4;
+}
+
+#g2{
+	background:#76c2cd;
+}
+
+#g3{
+	background:#fae0df;
+}
+
+#g4{
+	background:#b18bb3;
+}
+
+/* -------------------------------- instagram */
+#ig0{
+	background:#fee7d0;
+}
+
+#ig1{
+	background:#ad5bbf;
+}
+
+#ig2{
+	background:#d2dcec;
+}
+
+/* -------------------------------- iOS */
+#ios0{
+	background:#c9bdc8;
+}
+
+#ios1{
+	background:#f26f70;
+}
+
+#ios2{
+	background:#ffcca6;
+}
+
+/* -------------------------------- linkedin */
+#li0{
+	background:#faffce;
+}
+
+#li1{
+	background:#c4d2da;
+}
+
+#li2{
+	background:#f7dbad;
+}
+
+/* -------------------------------- twitter */
+#tw0{
+	background:#dcecf7;
+}
+
+#tw1{
+	background:#ffcb4c;
+}
+
+#tw2{
+	background:#e4d9e1;
+}

@@ -238,20 +238,23 @@ img{
 	margin:0 auto;
 	display:block;
 	width:100%;
-	min-width:175px;
+	min-width:300px;
 }
 
 #lg{
+    display: block;
 	margin:0 auto;
     width:100%;
 }
 
 #med{
+    display: block;
 	margin:0 auto;
 	width:80%;
 }
 
 #sm{
+    display: block;
 	margin:0 auto;
 	width:60%;
 }

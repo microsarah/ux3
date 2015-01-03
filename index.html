@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -12,6 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="_style/index.css">
     	<link rel="icon" href="_imgs/ico/ux3.ico">
     	
+    	<!-- google analytics -->
     	<script type="text/javascript">
   		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -20,33 +21,30 @@
   		ga('create', 'UA-55853123-1', 'auto');
   		ga('send', 'pageview');
 		</script>
-		
-			<script type="text/javascript">
-			function showResult(str) {
-  				if (str.length==0) { 
-    			document.getElementById("livesearch").innerHTML="";
-    			document.getElementById("livesearch").style.border="0px";
-    			return;
-  				}
-  			
-  				// code for IE7+, Firefox, Chrome, Opera, Safari
-  				if (window.XMLHttpRequest) {
-    				xmlhttp=new XMLHttpRequest();
-  			
-  				// code for IE6, IE5
-  				} else {  
-    				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-  				}	
-  				
-  				xmlhttp.onreadystatechange=function() {
-    				if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-      					document.getElementById("livesearch").innerHTML=xmlhttp.responseText;
-      					document.getElementById("livesearch").style.border="1px solid #A5ACB2";
-    				}
-  				}
-  				xmlhttp.open("GET","livesearch.php?q="+str,true);
-  				xmlhttp.send();
-				}
+
+		<!-- livesearch -->
+		<script type="text/javascript">		
+function showResult(str) {
+  if (str.length==0) { 
+    document.getElementById("livesearch").innerHTML="";
+    document.getElementById("livesearch").style.border="0px";
+    return;
+  }
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else {  // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+      document.getElementById("livesearch").innerHTML=xmlhttp.responseText;
+      document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+    }
+  }
+  xmlhttp.open("GET","livesearch.php?q="+str,true);
+  xmlhttp.send();
+}
 		</script>
 
 	</head>
@@ -54,49 +52,74 @@
 	<body>
 		<nav>
 			<ul>
-				<li><a href="#">+ User Experience of a Heartbreak</a></li>
-			
-				<li><label for="menu-toggle"><img src="_imgs/index/grid.png"></label></li>
-					<input type="checkbox" id="menu-toggle"/>
-						<ul id="menu">
-							<li><a href="facebook">
-							<figure><img src="_imgs/index/nav/fb.png"><figcaption>Facebook</figcaption></figure>
-							</a></li>
+			<li><a href="#">+ User Experience of a Heartbreak</a></li>
+		
+			<li><label for="menu-toggle"><img src="_imgs/index/grid.png"></label></li>
+			<input type="checkbox" id="menu-toggle"/>
+				<ul id="menu">
+				<a href="facebook">
+				<li><figure><img src="_imgs/index/nav/fb.png">
+				<figcaption>Facebook</figcaption></figure></li>
+				</a>
 
-							<li><a href="google">
-							<figure><img src="_imgs/index/nav/google.png"><figcaption>Google</figcaption></figure>
-							</a></li>
+				<a href="google">
+				<li><figure><img src="_imgs/index/nav/google.png">
+				<figcaption>Google</figcaption></figure></li>
+				</a>
 
-							<li><a href="instagram">
-							<figure><img src="_imgs/index/nav/ig.png"><figcaption>Instagram</figcaption></figure>
-							</a></li>
+				<a href="instagram">
+				<li><figure><img src="_imgs/index/nav/ig.png">
+				<figcaption>Instagram</figcaption></figure></li>
+				</a>
 
-							<li><a href="ios">
-							<figure><img src="_imgs/index/nav/ios.png"><figcaption>iOS</figcaption></figure>
-							</a></li>
+				<a href="ios">
+				<li><figure><img src="_imgs/index/nav/ios.png">
+				<figcaption>iOS</figcaption></figure></li>
+				</a>
 
-							<li><a href="linkedin">
-							<figure><img src="_imgs/index/nav/li.png"><figcaption>LinkedIn</figcaption></figure>
-							</a></li>
+				<a href="linkedin">
+				<li><figure><img src="_imgs/index/nav/li.png">
+				<figcaption>LinkedIn</figcaption></figure></li>
+				</a>
 
-							<li><a href="twitter">
-							<figure><img src="_imgs/index/nav/tw.png"><figcaption>Twitter</figcaption></figure>
-							</a></li>
-						</ul>	
-					
+				<a href="twitter">
+				<li><figure><img src="_imgs/index/nav/tw.png">
+				<figcaption>Twitter</figcaption></figure></li>
+				</a>
+				</ul>	
 				<li><a href="#"><img src="_imgs/index/bell.png"></a></li>
 				<li><a href="#"><img src="_imgs/index/share.png"></a></li>
 				<li><a href="#"><img src="_imgs/index/ux3.png"></a></li>
 			</ul>
 		</nav>
 		<div class="clearfix"></div>
-		<section>
+
+		<main>
 			<img src="_imgs/index/google.png">
+
+			<!--  livesearch.php-->
 			<form>
 				<input type="text" size="100" onkeyup="showResult(this.value)">
 				<div id="livesearch"></div>
 			</form>
-		</section>
+
+			<!-- trying the datalist-->
+<!-- 			<datalist id="heartbreak">
+			 <option value="can't find someone on facebook anymore">
+			 <a href="http://ux3.us/facebook/#section0">can't find someone on facebook anymore</a>
+			 </option>
+			  <option value="connect with ex on linkedin"></option>
+			  <option value="delete word autocorrect iphone"></option>
+			  <option value="does blocking someone on facebook end your relationship"></option>
+			  <option value="does blocking someone on instagram delete their likes"></option>
+			  <option value="download twitter archive"></option>
+			  <option value="email from my ex should i respond"></option>
+			  <option value="erase gchat history"></option>
+			  <option value="gchat how to unblock"></option>
+			  <option value="how do i browse anonymously"></option>
+			</datalist>
+			<input type="text" list="heartbreak"> -->
+		</main>
 		
 		<footer>
 			<a href="about"><p>About</p></a>

@@ -11,7 +11,7 @@ body{
     background:#c6cae3;
 }
 
-section{
+main{
 	margin:12em auto;
 	display:block;
 	width:51%;
@@ -33,9 +33,9 @@ a:visited{
 	color:inherit;
 }
 
-#red{
+span{
 	line-height:1.3em;
-	color:#eb008b;
+	color:#ea189f;
 }
 
 .red1{
