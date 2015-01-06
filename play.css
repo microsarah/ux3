@@ -1,71 +1,87 @@
-img{width:30%; display: block;}
-
-div{margin:0;}
-
-.gchat-top{
-	width:10px;
-	height:10px;
-	margin:0px;
-	background: red;
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
-#arrow {
-	margin:0;
-  	position:relative;
- 	width:0;
-  	height:0;
-	border-left:5px solid transparent;
-	border-right:5px solid transparent;
-	border-bottom:6px solid black;
-  	-webkit-transform: rotate(45deg);
-  	-moz-transform: rotate(45deg);
-  	-ms-transform: rotate(45deg);
-  	-o-transform: rotate(45deg);
-}
-
-#arrow:after {
-	margin:0;
-  	content:"";
-  	position: absolute;
-  	border: 0 solid transparent;
-  	left:-1px;
-  	top:5px;
-	width:2px;
-	height:10px;
-	background:#000000;
-  	-webkit-transform: rotate(180deg);
-  	-moz-transform: rotate(180deg);
-  	-ms-transform: rotate(180deg);
-  	-o-transform: rotate(180deg);
-}
-
-#x{
+.entry {
+	text-align: center;
+	min-height: 400px;
 	position: relative;
-	margin-left:20px;
-	width:2px;
-	top:-3px;
-	height:12px;
-	background:#000000;
-  	-webkit-transform: rotate(45deg);
-  	-moz-transform: rotate(45deg);
-  	-ms-transform: rotate(45deg);
-  	-o-transform: rotate(45deg);
+	width: 50%;
+	margin:0 auto;
+}
+.entry div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
 }
 
-#x:after{
-	position: absolute;
-	margin-left:20px;
-	width:2000px;
-	top:-3px;
-	height:2000px;
-	background:#ff3333;
-  	-webkit-transform: rotate(180deg);
-  	-moz-transform: rotate(180deg);
-  	-ms-transform: rotate(180deg);
-  	-o-transform: rotate(180deg);
+.entry div:before,
+.entry div:after {
+  display: block;
+  content: '';
+  position: absolute;
 }
 
-p{
-	display: block;
-	float:left;
+#gchatfight{
+	background:#bcbcbc;
+}
+
+/* ------------------- arrow bottom */
+#gchatfight div{
+	width: 4px;
+	height: 14px;
+	margin-left: 40px;
+	margin-right: 40px;
+	top: 40px;
+	left: 50%;
+	z-index: 1;
+	background: #eeeeee;
+	border-top-right-radius: 20px 3px;
+	border-top: 5px solid #eeeeee;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+/* ------------------- arrow top */
+#gchatfight div:before{
+	top:-14px;
+	left:-2px;
+    border-right: 8px solid #eeeeee;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    -webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+#gchatfight div:after{
+box-shadow: 0 3px 2px #999, 1px -2px 0 white, -1px -3px 2px #555, 0 0 0 15px #c2c2c2, 0 -2px 0 15px white, -2px -5px 1px 17px #666, 0 10px 10px 15px rgba(0,0,0,0.3), -90px -51px 1px -43px #aaa, -90px -50px 1px -40px #888, -90px -51px 0 -34px #ccc, -90px -50px 0 -30px #aaa, -90px -48px 1px -28px rgba(0,0,0,0.2), -124px -73px 1px -48px #eee, -125px -72px 0 -46px #666, -85px -73px 1px -48px #eee, -86px -72px 0 -46px #666, 42px -82px 1px -48px #eee, 41px -81px 0 -46px #777, 67px -73px 1px -48px #eee, 66px -72px 0 -46px #666, -46px -86px 1px -45px #444, -44px -87px 0 -38px #333, -44px -86px 0 -37px #ccc, -44px -85px 0 -34px #999, 14px -89px 1px -48px #eee, 12px -84px 1px -48px #999, 23px -85px 0 -47px #444, 23px -87px 0 -46px #888;
+}
+
+
+
+/* ------------------- x bottom */
+#gchatx div{
+	top:-14px;
+	left:-2px;
+    border-right: 8px solid #eeeeee;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    -webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+/* ------------------- x top */
+#gchatx div:before{
+	top:-14px;
+	left:-2px;
+    border-right: 8px solid #eeeeee;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    -webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
 }
