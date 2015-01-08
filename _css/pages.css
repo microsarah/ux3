@@ -12,16 +12,17 @@ section{
 	overflow:hidden;
 }
 
-section figure{
-	margin:7em auto;
-	height:50vh;
-	width:33.33%;
+section img{
+	width:100%;
 }
 
-section figure img{
-	width:100%;
-	min-width:300px;
+.gifs{
+	margin:7em auto;
+	width:33.33%;
+	min-width:350px;
 }
+
+
 
 /* -------------------------------- about + thanku */
 
@@ -60,22 +61,6 @@ a:visited{
 	color:inherit;
 }
 
-/* -------------------------------- temp image fix */
-
-#lg{
-	margin:0 auto;
-    width:100%;
-}
-
-#med{
-	margin:0 auto;
-	width:80%;
-}
-
-#sm{
-	margin:0 auto;
-	width:60%;
-}
 
 /* -------------------------------- nav with logo only */
 
@@ -85,14 +70,14 @@ a:visited{
 	right:0;
 }
 
-/* -------------------------------- about + thanku */
 
+/* -------------------------------------------------------- BACKGROUNDS */
+/* -------------------------------- about + thanku */
 #info{
 	background:#c6cae3;
 }
 
 /* -------------------------------- facebook */
-
 #fb0{
 	background:#cfe6d4;
 }
