@@ -2,15 +2,13 @@
 <html>
 
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>ux3</title>
-		<meta name="author" content="Sarah K Hallacher" />
-		<meta name="description" content="user experience of a heartbreak" />
-		<meta name="keywords"  content="ux,user experience,heartbreak" />
-		<meta name="Resource-type" content="Document" />
-	
 		<link rel="stylesheet" type="text/css" href="_css/index.css">
     	<link rel="icon" href="../_imgs/ico/ux3.ico">
+    	<meta charset="UTF-8">
+
+    	<!-- [HTML5 if IE] -->
+ 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     	
     	<!-- google analytics -->
     	<script type="text/javascript">
@@ -23,28 +21,34 @@
 		</script>
 
 		<!-- livesearch -->
-		<script type="text/javascript">		
-function showResult(str) {
-  if (str.length==0) { 
-    document.getElementById("livesearch").innerHTML="";
-    document.getElementById("livesearch").style.border="0px";
-    return;
-  }
-  if (window.XMLHttpRequest) {
-    // code for IE7+, Firefox, Chrome, Opera, Safari
-    xmlhttp=new XMLHttpRequest();
-  } else {  // code for IE6, IE5
-    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-  }
-  xmlhttp.onreadystatechange=function() {
-    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-      document.getElementById("livesearch").innerHTML=xmlhttp.responseText;
-      document.getElementById("livesearch").style.border="1px solid #A5ACB2";
-    }
-  }
-  xmlhttp.open("GET","_livesearch/livesearch.php?q="+str,true);
-  xmlhttp.send();
-}
+		<script>
+			function showResult(str) {
+				
+  				if (str.length==0) { 
+    			document.getElementById("livesearch").innerHTML="";
+    			document.getElementById("livesearch").style.border="0px";
+    			return;
+  				}
+  			
+  				// code for IE7+, Firefox, Chrome, Opera, Safari
+  				if (window.XMLHttpRequest) {
+    				xmlhttp=new XMLHttpRequest();
+  			
+  				// code for IE6, IE5
+  				} 
+  				else {  
+    				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  				}	
+  				
+  				xmlhttp.onreadystatechange=function() {
+    				if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+      					document.getElementById("livesearch").innerHTML=xmlhttp.responseText;
+      					document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+    				}
+  				}
+  				xmlhttp.open("GET","../_livesearch/livesearch.php?q="+str,true);
+  				xmlhttp.send();
+				}
 		</script>
 
 	</head>
