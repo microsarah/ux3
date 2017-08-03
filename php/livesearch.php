@@ -1,11 +1,12 @@
 <?php
-$xmlDoc=new DOMDocument();
-$xmlDoc->load("links.xml");
 
-$x=$xmlDoc->getElementsByTagName('link');
+$xmlDoc=new DOMDocument();
+$xmlDoc->load("../_xml/links.xml");
 
 //get the q parameter from URL
 $q=$_GET["q"];
+
+$x=$xmlDoc->getElementsByTagName('link');
 
 //lookup all links from the xml file if length of q>0
 if (strlen($q)>0) {
