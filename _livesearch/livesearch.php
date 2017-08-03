@@ -1,6 +1,6 @@
 <?php
 $xmlDoc=new DOMDocument();
-$xmlDoc->load("../xml/links.xml");
+$xmlDoc->load("../_livesearch/links.xml");
 
 $x=$xmlDoc->getElementsByTagName('link');
 
@@ -14,17 +14,18 @@ if (strlen($q)>0) {
     $y=$x->item($i)->getElementsByTagName('title');
     $z=$x->item($i)->getElementsByTagName('url');
     if ($y->item(0)->nodeType==1) {
+    
       //find a link matching the search text
       if (stristr($y->item(0)->childNodes->item(0)->nodeValue,$q)) {
         if ($hint=="") {
           $hint="<a href='" . 
           $z->item(0)->childNodes->item(0)->nodeValue . 
-          "'>" . 
+          "' target='_self'>" . 
           $y->item(0)->childNodes->item(0)->nodeValue . "</a>";
         } else {
-          $hint=$hint . "<a href='" . 
+          $hint=$hint . "<br /><a href='" . 
           $z->item(0)->childNodes->item(0)->nodeValue . 
-          "'>" . 
+          "' target='_self'>" . 
           $y->item(0)->childNodes->item(0)->nodeValue . "</a>";
         }
       }
@@ -32,10 +33,10 @@ if (strlen($q)>0) {
   }
 }
 
-// Set output to "no suggestion" if no hint was found
+// Set output to "no suggestion" if no hint were found
 // or to the correct values
 if ($hint=="") {
-  $response="<a href='all/index.html'>did you mean 'i am heartbroken'?</a>";
+  $response="did you mean 'i am heartbroken'?";
 } else {
   $response=$hint;
 }
